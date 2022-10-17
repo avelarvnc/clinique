@@ -1,0 +1,167 @@
+:root{
+    --branco-fundo: rgb(235, 239, 247);
+    --branco-destaque: rgb(235, 252, 246);
+    --verde-escuro-fundo: #1c5e47;
+    --cinza-claro-texto: #DDD;
+    --cinza-claro-esverdeado-texto: rgb(191, 221, 209);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--branco-fundo);
+    font-family: 'Abel', sans-serif;;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Arimo', sans-serif;
+    color: var(--verde-escuro-fundo);
+    margin-bottom: 16px;
+}
+
+p{
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: var(--verde-escuro-fundo);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px;
+}
+
+nav{
+    display: none;
+}
+
+.banner img{
+    width: 100%;
+}
+
+#sobre{
+    padding: 8px;
+    background-color: var(--verde-escuro-fundo);
+    color: var(--cinza-claro-texto);
+    margin-bottom: 24px;
+}
+
+#sobre h2{
+    color: var(--cinza-claro-esverdeado-texto) !important;
+}
+
+.painel_servicos{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.card_servico{
+    width: 90%;
+    margin: 2% 0;
+    padding: 1%;
+    background-color: var(--branco-destaque);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card_servico img{
+    border-radius: 5px;
+}
+
+.contato{
+    padding: 8px;
+}
+
+.contato form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato form label {
+    color: var(--verde-escuro-fundo);
+    font-size: 1.2rem;
+}
+
+.contato form input, .contato form select {
+    color: var(--verde-escuro-fundo);
+    margin: 8px 0;
+    font-size: 1.2rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.contato form textarea{
+    color: var(--verde-escuro-fundo);
+    margin: 8px 0;
+    font-size: 1.2rem;
+    height: 40vh;
+    border-radius: 5px;
+    border: none;
+}
+
+.contato form button{
+    background-color: var(--verde-escuro-fundo);
+    color: var(--cinza-claro-texto);
+    font-size: 1.4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--verde-escuro-fundo);
+    color: var(--cinza-claro-texto);
+}
+
+@media only screen and (min-width: 769px) {
+
+    header{
+        justify-content: space-between ;
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav li{
+        display: inline;
+        margin: 0 8px;
+    }
+
+    .painel_servicos{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+
+    }
+
+    .card_servico{
+        width: 23%;
+        margin: 0 1%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 24px 0;
+    }
+  }
