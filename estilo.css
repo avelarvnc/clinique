@@ -81,6 +81,12 @@ nav{
     color: var(--cinza-claro-esverdeado-texto) !important;
 }
 
+#servicos{
+    padding: 8px;
+    margin-bottom: 24px;
+}
+
+
 .painel_servicos{
     display: flex;
     flex-direction: column;
